@@ -1,8 +1,11 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    width: 20vw;
-    height: 20vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     border-style: solid;
     border-color: blueviolet;
     border-width: 1px;
@@ -12,8 +15,7 @@
     border-style: solid;
     border-color: black;
     border-width: 1px;
-    width: 6.25%;
-    height: 6.25%;
+    flex: 0 0 calc(100% / 50 - 4px);
 }
 
 
