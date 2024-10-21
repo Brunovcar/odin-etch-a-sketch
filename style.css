@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20vw;
+    height: 20vw;
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 1px;
+}
+
+.content {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 6.25%;
+    height: 6.25%;
+}
+
+
