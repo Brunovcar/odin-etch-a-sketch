@@ -1,21 +1,32 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
     position: fixed;
-    top: 0;
+    top: 100px;
     left: 0;
     bottom: 0;
     right: 0;
-    border-style: solid;
-    border-color: blueviolet;
-    border-width: 1px;
 }
 
 .content {
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    flex: 0 0 calc(100% / 50 - 4px);
+    flex: 0 0 calc(100% / 100);
+}
+
+.button {
+    width: 250px;
+    height: 80px;
+    border: 1px solid black;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 
