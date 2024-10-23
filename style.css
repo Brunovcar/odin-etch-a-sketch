@@ -1,3 +1,7 @@
+:root {
+    --numberColumns: calc(100% / 10);
+}
+
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -16,10 +20,10 @@
 }
 
 .content {
-    flex: 0 0 calc(100% / 100);
+    flex: 0 0 var(--numberColumns);
 }
 
-.button {
+.button-1 , .button-2{
     width: 250px;
     height: 80px;
     border: 1px solid black;

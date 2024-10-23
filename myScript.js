@@ -3,9 +3,13 @@ let gridSide = 100;
 let gridSize = gridSide*gridSide;
 let paintColor = 0; /*Variable to change between pencil and eraser*/
 
-const container = document.querySelector('.container');
+/*Set initial flex value to fill the whole screen with the grid*/
+
+document.documentElement.style.setProperty('--numberColumns', 'calc(100% / ' + gridSide + ')');
 
 /*Loop to create the initial grid*/
+
+const container = document.querySelector('.container');
 
 for (let i = 0; i < gridSize; i++) {
     divArray[i] = document.createElement('div');
@@ -49,6 +53,10 @@ button1.addEventListener('click', function() {
         gridSide = parseInt(buttonInput1);
         gridSize = gridSide*gridSide;
     }
+
+    /* Set the flex value for the new grid */
+
+    document.documentElement.style.setProperty('--numberColumns', 'calc(100% / ' + gridSide + ')');
 
     /*Create a new grid based on the value*/
 
